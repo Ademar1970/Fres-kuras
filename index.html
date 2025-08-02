@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fres-Kuras - Jugos Naturales y Frappuccinos</title>
+    <meta name="description" content="Los mejores jugos naturales, frappuccinos y café de especialidad. 100% naturales, ingredientes frescos, entregas a domicilio en CDMX.">
+    <meta name="keywords" content="jugos naturales, frappuccinos, café, saludable, natural, CDMX, entregas">
+    <meta name="author" content="Fres-Kuras">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://fres-kuras.com/">
+    <meta property="og:title" content="Fres-Kuras - Jugos Naturales y Frappuccinos">
+    <meta property="og:description" content="Los mejores jugos naturales, frappuccinos y café de especialidad. 100% naturales, ingredientes frescos.">
+    <meta property="og:image" content="./images/og-image.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://fres-kuras.com/">
+    <meta property="twitter:title" content="Fres-Kuras - Jugos Naturales y Frappuccinos">
+    <meta property="twitter:description" content="Los mejores jugos naturales, frappuccinos y café de especialidad. 100% naturales, ingredientes frescos.">
+    <meta property="twitter:image" content="./images/twitter-image.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+    <link rel="apple-touch-icon" href="./images/apple-touch-icon.png">
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="./manifest.json">
+    <meta name="theme-color" content="#4A90E2">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="Fres-Kuras">
+    <meta name="msapplication-TileColor" content="#4A90E2">
+    <meta name="msapplication-TileImage" content="./images/icons/icon-144x144.png">
+    
+    <!-- Remix Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loading-screen">
+        <div class="loading-content">
+            <div class="loading-logo">🥤</div>
+            <div class="loading-text">Fres-Kuras</div>
+            <div class="loading-spinner"></div>
+        </div>
+    </div>
+    
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                <i class="ri-drop-line"></i>
+                Fres-Kuras
+            </a>
+            
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">Inicio</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">Nosotros</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#menu" class="nav__link">Menú</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#nutrition-calculator" class="nav__link">Nutrición</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#reviews" class="nav__link">Reseñas</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#faq" class="nav__link">FAQ</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">Contacto</a>
+                    </li>
+                </ul>
+                
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
+            
+            <div class="nav__actions">
+                <button class="nav__search" id="nav-search">
+                    <i class="ri-search-line"></i>
+                </button>
+                <button class="nav__cart" id="nav-cart">
+                    <i class="ri-shopping-cart-line"></i>
+                    <span class="nav__cart-count">0</span>
+                </button>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-line"></i>
+                </div>
+            </div>
+        </nav>
+        
+        <!-- Progress Bar -->
+        <div class="scroll-progress" id="scroll-progress"></div>
+    </header>
+    
+    <!-- Main Content -->
+    <main class="main">
+        <!-- Hero Section with Video Background -->
+        <section class="hero section" id="home">
+            <div class="hero__video-bg" id="hero-video-bg"></div>
+            <div class="hero__container container">
+                <div class="hero__content">
+                    <h1 class="hero__title">
+                        Jugos <span class="hero__title-accent">100% Naturales</span>
+                        <br>que Nutren tu Vida
+                    </h1>
+                    <p class="hero__description">
+                        Descubre la frescura auténtica en cada sorbo. Preparamos nuestros jugos 
+                        con ingredientes seleccionados y técnicas artesanales para ofrecerte 
+                        la mejor experiencia nutricional.
+                    </p>
+                    
+                    <div class="hero__actions">
+                        <a href="#menu" class="hero__cta btn btn--primary">
+                            <i class="ri-restaurant-line"></i>
+                            Ver Menú
+                        </a>
+                        <a href="#about" class="hero__cta btn btn--secondary">
+                            <i class="ri-play-circle-line"></i>
+                            Conocer Más
+                        </a>
+                    </div>
+                    
+                    <div class="hero__stats">
+                        <div class="hero__stat">
+                            <span class="hero__stat-number">100%</span>
+                            <span class="hero__stat-label">Natural</span>
+                        </div>
+                        <div class="hero__stat">
+                            <span class="hero__stat-number">15+</span>
+                            <span class="hero__stat-label">Sabores</span>
+                        </div>
+                        <div class="hero__stat">
+                            <span class="hero__stat-number">5★</span>
+                            <span class="hero__stat-label">Calificación</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hero__image">
+                    <img src="./images/hero-juice.svg" alt="Jugos Naturales Fres-Kuras" class="hero__img">
+                    <div class="hero__image-decoration">
+                        <div class="hero__decoration hero__decoration--1"></div>
+                        <div class="hero__decoration hero__decoration--2"></div>
+                        <div class="hero__decoration hero__decoration--3"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Scroll Down Indicator -->
+            <div class="hero__scroll">
+                <a href="#about" class="hero__scroll-link">
+                    <i class="ri-mouse-line"></i>
+                    <span>Scroll Down</span>
+                </a>
+            </div>
+        </section>
+        
+        <!-- About Section -->
+        <section class="about section" id="about">
+            <div class="about__video-bg" id="about-video-bg"></div>
+            <div class="about__container container">
+                <div class="about__content">
+                    <div class="about__text">
+                        <span class="about__subtitle">Nuestra Historia</span>
+                        <h2 class="about__title">
+                            Pasión por lo <span class="about__title-accent">Natural</span>
+                        </h2>
+                        <p class="about__description">
+                            Desde 2020, nos dedicamos a crear la experiencia perfecta en jugos naturales. 
+                            Cada producto es elaborado con amor, utilizando únicamente ingredientes frescos 
+                            y técnicas que preservan todos los nutrientes.
+                        </p>
+                        
+                        <div class="about__features">
+                            <div class="about__feature">
+                                <i class="ri-leaf-line"></i>
+                                <div>
+                                    <h3>100% Orgánico</h3>
+                                    <p>Ingredientes certificados sin químicos</p>
+                                </div>
+                            </div>
+                            <div class="about__feature">
+                                <i class="ri-time-line"></i>
+                                <div>
+                                    <h3>Preparación Fresca</h3>
+                                    <p>Elaborados al momento de tu pedido</p>
+                                </div>
+                            </div>
+                            <div class="about__feature">
+                                <i class="ri-heart-pulse-line"></i>
+                                <div>
+                                    <h3>Nutrición Completa</h3>
+                                    <p>Vitaminas y minerales preservados</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="about__actions">
+                            <a href="#nutrition-calculator" class="btn btn--primary">
+                                <i class="ri-calculator-line"></i>
+                                Calcular Nutrición
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="about__images">
+                        <img src="./images/about-1.jpg" alt="Ingredientes frescos" class="about__img about__img--1">
+                        <img src="./images/about-2.jpg" alt="Preparación artesanal" class="about__img about__img--2">
+                        <div class="about__experience">
+                            <span class="about__experience-number">4+</span>
+                            <span class="about__experience-text">Años de<br>Experiencia</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Products Carousel Section -->
+        <section class="products-carousel section" id="products-carousel">
+            <!-- Advanced carousel will be inserted here by JavaScript -->
+        </section>
+        
+        <!-- Menu Section -->
+        <section class="menu section" id="menu">
+            <div class="menu__container container">
+                <div class="menu__header">
+                    <span class="menu__subtitle">Nuestro Menú</span>
+                    <h2 class="menu__title">Sabores que <span class="menu__title-accent">Enamoran</span></h2>
+                    <p class="menu__description">
+                        Descubre nuestra amplia variedad de jugos naturales, frappuccinos y cafés de especialidad.
+                    </p>
+                </div>
+                
+                <div class="menu__filters">
+                    <button class="menu__filter active" data-filter="all">
+                        <i class="ri-apps-line"></i>
+                        Todos
+                    </button>
+                    <button class="menu__filter" data-filter="jugos">
+                        <i class="ri-drop-line"></i>
+                        Jugos
+                    </button>
+                    <button class="menu__filter" data-filter="frappuccinos">
+                        <i class="ri-cup-line"></i>
+                        Frappuccinos
+                    </button>
+                    <button class="menu__filter" data-filter="cafe">
+                        <i class="ri-cup-hot-line"></i>
+                        Café
+                    </button>
+                </div>
+                
+                <div class="menu__content" id="menu-content">
+                    <!-- Menu items will be populated by JavaScript -->
+                </div>
+                
+                <div class="menu__cta">
+                    <h3>¿No encuentras lo que buscas?</h3>
+                    <p>Podemos crear mezclas personalizadas según tus gustos y necesidades nutricionales</p>
+                    <a href="#contact" class="btn btn--primary">
+                        <i class="ri-customer-service-line"></i>
+                        Solicitar Personalizado
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Nutritional Calculator Section -->
+        <section class="nutrition-calculator section" id="nutrition-calculator">
+            <!-- Nutritional calculator will be inserted here by JavaScript -->
+        </section>
+        
+        <!-- Customer Reviews Section -->
+        <section class="reviews section" id="reviews">
+            <!-- Customer reviews will be inserted here by JavaScript -->
+        </section>
+        
+        <!-- Google Reviews Section -->
+        <section class="google-reviews-section section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Reseñas</span>
+                    <h2 class="section-title">Lo que Dicen Nuestros <span class="title-accent">Clientes</span></h2>
+                </div>
+                <div id="google-reviews-container">
+                    <!-- Google reviews will be inserted here by JavaScript -->
+                </div>
+            </div>
+        </section>
+        
+        <!-- Instagram Feed Section -->
+        <section class="instagram-feed section" id="instagram-feed">
+            <!-- Instagram feed will be inserted here by JavaScript -->
+        </section>
+        
+        <!-- FAQ Section -->
+        <section class="faq section" id="faq">
+            <!-- FAQ accordion will be inserted here by JavaScript -->
+        </section>
+        
+        <!-- Newsletter Section -->
+        <section class="newsletter section" id="newsletter">
+            <!-- Newsletter signup will be inserted here by JavaScript -->
+        </section>
+        
+        <!-- Contact Section -->
+        <section class="contact section" id="contact">
+            <div class="contact__container container">
+                <div class="contact__header">
+                    <span class="contact__subtitle">Contáctanos</span>
+                    <h2 class="contact__title">¿Listo para <span class="contact__title-accent">Ordenar</span>?</h2>
+                    <p class="contact__description">
+                        Estamos aquí para atenderte. Contáctanos por cualquier medio y te responderemos pronto.
+                    </p>
+                </div>
+                
+                <div class="contact__content">
+                    <div class="contact__info">
+                        <div class="contact__card">
+                            <i class="ri-map-pin-line"></i>
+                            <h3>Ubicación</h3>
+                            <p>Av. Revolución 123<br>Col. Centro, CDMX</p>
+                        </div>
+                        
+                        <div class="contact__card">
+                            <i class="ri-phone-line"></i>
+                            <h3>Teléfono</h3>
+                            <p>+52 55 1234 5678</p>
+                            <a href="tel:+525512345678" class="contact__link">Llamar ahora</a>
+                        </div>
+                        
+                        <div class="contact__card">
+                            <i class="ri-mail-line"></i>
+                            <h3>Email</h3>
+                            <p>hola@fres-kuras.com</p>
+                            <a href="mailto:hola@fres-kuras.com" class="contact__link">Enviar email</a>
+                        </div>
+                        
+                        <div class="contact__card">
+                            <i class="ri-time-line"></i>
+                            <h3>Horarios</h3>
+                            <p>Lun - Dom<br>8:00 AM - 10:00 PM</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact__form-container">
+                        <form class="contact__form" id="contact-form">
+                            <div class="contact__form-group">
+                                <input type="text" name="name" class="contact__input" placeholder="Tu nombre" required>
+                                <i class="ri-user-line"></i>
+                            </div>
+                            
+                            <div class="contact__form-group">
+                                <input type="email" name="email" class="contact__input" placeholder="Tu email" required>
+                                <i class="ri-mail-line"></i>
+                            </div>
+                            
+                            <div class="contact__form-group">
+                                <input type="tel" name="phone" class="contact__input" placeholder="Tu teléfono">
+                                <i class="ri-phone-line"></i>
+                            </div>
+                            
+                            <div class="contact__form-group">
+                                <select name="subject" class="contact__input" required>
+                                    <option value="">Selecciona un tema</option>
+                                    <option value="pedido">Hacer un pedido</option>
+                                    <option value="informacion">Solicitar información</option>
+                                    <option value="sugerencia">Sugerencia</option>
+                                    <option value="queja">Queja</option>
+                                    <option value="otro">Otro</option>
+                                </select>
+                                <i class="ri-arrow-down-s-line"></i>
+                            </div>
+                            
+                            <div class="contact__form-group">
+                                <textarea name="message" class="contact__input contact__textarea" placeholder="Tu mensaje" rows="5" required></textarea>
+                                <i class="ri-message-line"></i>
+                            </div>
+                            
+                            <button type="submit" class="contact__submit btn btn--primary">
+                                <i class="ri-send-plane-line"></i>
+                                Enviar Mensaje
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                
+                <!-- Google Maps -->
+                <div class="contact__map" id="contact-map">
+                    <!-- Google Maps will be inserted here by JavaScript -->
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__container container">
+            <div class="footer__content">
+                <div class="footer__section">
+                    <a href="#" class="footer__logo">
+                        <i class="ri-drop-line"></i>
+                        Fres-Kuras
+                    </a>
+                    <p class="footer__description">
+                        Jugos 100% naturales que nutren tu vida. 
+                        Ingredientes frescos, sabores auténticos.
+                    </p>
+                    <div class="footer__social">
+                        <a href="#" class="footer__social-link">
+                            <i class="ri-facebook-fill"></i>
+                        </a>
+                        <a href="#" class="footer__social-link">
+                            <i class="ri-instagram-line"></i>
+                        </a>
+                        <a href="#" class="footer__social-link">
+                            <i class="ri-twitter-fill"></i>
+                        </a>
+                        <a href="#" class="footer__social-link">
+                            <i class="ri-youtube-fill"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer__section">
+                    <h3 class="footer__title">Enlaces Rápidos</h3>
+                    <ul class="footer__links">
+                        <li><a href="#home" class="footer__link">Inicio</a></li>
+                        <li><a href="#about" class="footer__link">Nosotros</a></li>
+                        <li><a href="#menu" class="footer__link">Menú</a></li>
+                        <li><a href="#contact" class="footer__link">Contacto</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer__section">
+                    <h3 class="footer__title">Productos</h3>
+                    <ul class="footer__links">
+                        <li><a href="#" class="footer__link">Jugos Naturales</a></li>
+                        <li><a href="#" class="footer__link">Frappuccinos</a></li>
+                        <li><a href="#" class="footer__link">Café Especialidad</a></li>
+                        <li><a href="#" class="footer__link">Smoothies</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer__section">
+                    <h3 class="footer__title">Contacto</h3>
+                    <div class="footer__contact">
+                        <p><i class="ri-map-pin-line"></i> Av. Revolución 123, CDMX</p>
+                        <p><i class="ri-phone-line"></i> +52 55 1234 5678</p>
+                        <p><i class="ri-mail-line"></i> hola@fres-kuras.com</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer__bottom">
+                <p class="footer__copy">
+                    &copy; 2024 Fres-Kuras. Todos los derechos reservados.
+                </p>
+                <div class="footer__legal">
+                    <a href="#" class="footer__legal-link">Política de Privacidad</a>
+                    <a href="#" class="footer__legal-link">Términos de Servicio</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Quick Actions -->
+    <div class="quick-actions" id="quick-actions">
+        <button class="quick-action" id="scroll-to-top" title="Ir arriba">
+            <i class="ri-arrow-up-line"></i>
+        </button>
+        <button class="quick-action" id="toggle-theme" title="Cambiar tema">
+            <i class="ri-moon-line"></i>
+        </button>
+    </div>
+    
+    <!-- Modals -->
+    <!-- Product Quick View Modal -->
+    <div class="modal" id="product-modal">
+        <div class="modal__content">
+            <button class="modal__close" id="product-modal-close">
+                <i class="ri-close-line"></i>
+            </button>
+            <div class="product-quick-view" id="product-quick-view">
+                <!-- Product details will be inserted here by JavaScript -->
+            </div>
+        </div>
+    </div>
+    
+    <!-- Shopping Cart Modal -->
+    <div class="modal" id="cart-modal">
+        <div class="modal__content">
+            <button class="modal__close" id="cart-modal-close">
+                <i class="ri-close-line"></i>
+            </button>
+            <div class="cart-content" id="cart-content">
+                <!-- Cart items will be inserted here by JavaScript -->
+            </div>
+        </div>
+    </div>
+    
+    <!-- Search Modal -->
+    <div class="modal" id="search-modal">
+        <div class="modal__content">
+            <button class="modal__close" id="search-modal-close">
+                <i class="ri-close-line"></i>
+            </button>
+            <div class="search-content">
+                <div class="search-box">
+                    <input type="text" class="search-input" placeholder="Buscar productos..." id="search-input">
+                    <button class="search-btn">
+                        <i class="ri-search-line"></i>
+                    </button>
+                </div>
+                <div class="search-results" id="search-results">
+                    <!-- Search results will be inserted here by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- JavaScript -->
+    <script src="js/utils.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
